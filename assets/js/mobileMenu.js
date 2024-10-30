@@ -10,34 +10,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // Close sections dropdown when clicking outside
     document.addEventListener('click', (e) => {
         if (!sectionsToggle.contains(e.target)) {
-            sectionsDropdown.style.display = 'none';
+            closeDropdown();
         }
     });
 
-    // Highlight active section in bottom nav
-    const bottomNavItems = document.querySelectorAll('.bottom-nav-item');
-    const sections = document.querySelectorAll('section');
-
-    function highlightActiveSection() {
-        let current = '';
-        const scrollPosition = window.scrollY;
-
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (scrollPosition >= sectionTop - sectionHeight / 3) {
-                current = section.getAttribute('id');
+    // Handle section link clicks
+    const sectionLinks = sectionsDropdown.querySelectorAll('a');
+    sectionLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
             }
         });
-
-        bottomNavItems.forEach(item => {
-            item.classList.remove('active');
-            if (item.getAttribute('href') === `#${current}`) {
-                item.classList.add('active');
-            }
-        });
-    }
-
-    window.addEventListener('scroll', highlightActiveSection);
-    highlightActiveSection(); // Call once to set initial state
+    });
 });

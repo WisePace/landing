@@ -24,6 +24,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           publish_branch: gh_pages_test
+          cname: test.wisepace.org
 
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/master'
@@ -32,3 +33,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           publish_branch: gh_pages
+          cname: wisepace.org

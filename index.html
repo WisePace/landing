@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KostConsulting</title>
+    <title>WisePath</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="assets/js/tailwind_config.js"></script>
     <script src="assets/js/navbar.js"></script>
@@ -11,6 +11,8 @@
     <script src="assets/js/copyright_updater.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link href="/assets/css/main.css" rel="stylesheet">
 </head>
 <body class="bg-gray-200 text-gray-600 dark:bg-gray-800 dark:text-white transition-colors duration-300 pb-16 md:pb-0">
@@ -20,14 +22,14 @@
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
-                        <a href="#" id="navLogo" class="text-2xl font-bold transition-colors duration-300">KostConsulting</a>
+                        <a href="#" id="navLogo" class="text-2xl font-bold transition-colors duration-300">WisePath</a>
                     </div>
                     <div class="hidden md:block">
                         <div class="ml-10 flex items-baseline space-x-4">
-                            <a href="#about" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">About</a>
-                            <a href="#process" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Process</a>
-                            <a href="#services" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Services</a>
-                            <a href="#reviews" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Reviews</a>
+                            <a href="#about" class="nav-link text-xl px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">About</a>
+                            <a href="#process" class="nav-link text-xl px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Process</a>
+                            <a href="#services" class="nav-link text-xl px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Services</a>
+                            <a href="#reviews" class="nav-link text-xl px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Reviews</a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +67,7 @@
         </div>
     </section>
 
-    <section id="about" class="py-16">
+    <section id="about" class="py-16" data-aos="fade-up">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white">About</h2>
             
@@ -131,7 +133,7 @@
         </div>
     </section> 
 
-    <section id="process" class="py-16 bg-white dark:bg-gray-800">
+    <section id="process" class="py-16 bg-white dark:bg-gray-800" data-aos="fade-up">
         <div class="container mx-auto px-4">
             <h2 class="text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white">Our Process</h2>
             
@@ -202,7 +204,7 @@
         </div>
     </section>
     
-    <section id="services" class="bg-gray-100 dark:bg-gray-800 relative py-24 overflow-hidden">
+    <section id="services" class="bg-gray-100 dark:bg-gray-800 relative py-24 overflow-hidden" data-aos="fade-up">
         <div class="container mx-auto px-4 relative z-10">
             <h2 class="text-4xl font-bold mb-16 text-center text-gray-800 dark:text-white">Our Services</h2>
             
@@ -246,14 +248,14 @@
     
             <div class="mt-16 text-center">
                 <p class="text-lg text-gray-800 dark:text-gray-200 mb-4">All services offer a 20% discount for crypto payments</p>
-                <a href="#contact" class="inline-block bg-gray-200 bg-opacity-80 dark:bg-white dark:bg-opacity-20 text-gray-800 dark:text-white px-8 py-3 rounded-full hover:bg-opacity-100 dark:hover:bg-opacity-30 transition duration-300 shadow-lg backdrop-filter backdrop-blur-md">
+                <a href="#contact" class="text-2xl inline-block bg-gray-200 bg-opacity-80 dark:bg-white dark:bg-opacity-20 text-gray-800 dark:text-white px-8 py-3 rounded-full hover:bg-opacity-100 dark:hover:bg-opacity-30 transition duration-300 shadow-lg backdrop-filter backdrop-blur-md">
                     Schedule My Consultation
                 </a>
             </div>
         </div>
     </section>   
 
-    <section id="reviews" class="py-16 bg-white dark:bg-gray-800">
+    <section id="reviews" class="py-16 bg-white dark:bg-gray-800" data-aos="fade-up">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white">Reviews</h2>
             
@@ -306,11 +308,11 @@
         </div>
     </section>
     
-    <footer id="contact" class="py-8 bg-gray-800 text-white">
+    <footer id="contact" class="py-8 bg-gray-100 dark:bg-gray-800 text-black dark:text-white" data-aos="fade-up">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-4">KostConsult</h2>
-                <p class="text-lg mb-2">info@kostconsult.com</p>
+                <h2 class="text-3xl font-bold mb-4">WisePath</h2>
+                <p class="text-lg mb-2">info@wisepath.com</p>
                 <p class="text-lg mb-6">+372 5555 5555</p>
                 <p id="copyright" class="text-sm text-gray-400"></p>
             </div>
@@ -320,27 +322,35 @@
     <nav class="bottom-nav bg-white dark:bg-gray-800">
         <a href="#home" class="bottom-nav-item flex-1">
             <i class="fas fa-home text-xl"></i>
-            <span class="text-xs mt-1">Home
+            <span class="text-xs mt-1">Home</span>
         </a>
         <div class="bottom-nav-item flex-1 relative" id="sectionsToggle">
             <i class="fas fa-list text-xl"></i>
-            <span class="text-xs mt-1">Sections
+            <span class="text-xs mt-1">Sections</span>
             <div class="sections-dropdown bg-white dark:bg-gray-800">
-                <a href="#about">About</a>
-                <a href="#process">Process</a>
-                <a href="#services">Services</a>
-                <a href="#reviews">Reviews</a>
+                <a class="text-lg" href="#about">About</a>
+                <a class="text-lg" href="#process">Process</a>
+                <a class="text-lg" href="#services">Services</a>
+                <a class="text-lg" href="#reviews">Reviews</a>
             </div>
-        </div>
+        </div>        
         <button id="darkModeToggleMobile" class="bottom-nav-item flex-1">
             <i id="darkModeIconMobile" class="fas fa-sun text-xl"></i>
-            <span class="text-xs mt-1">Theme
+            <span class="text-xs mt-1">Theme</span>
         </button>
         <a href="#contact" class="bottom-nav-item flex-1">
             <i class="fas fa-question-circle text-xl"></i>
             <span class="text-xs mt-1">Contact</span>
         </a>
     </nav>
+    <script>
+        AOS.init({
+          offset: 200,
+          duration: 600,
+          easing: 'ease-out',
+          delay: 100,
+        });
+      </script>
     <script src="/assets/js/darkMode.js"></script>
     <script src="/assets/js/mobileMenu.js"></script>
 </body>

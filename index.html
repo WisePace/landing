@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KostConsulting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind_config.js"></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/copyright_updater.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="/assets/css/main.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200 text-gray-600 dark:bg-gray-800 dark:text-white transition-colors duration-300 pb-16 md:pb-0">
+    <!-- Navbar -->
+    <nav id="mainNav" class="fixed w-full z-20 top-0 left-0 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <a href="#" id="navLogo" class="text-2xl font-bold transition-colors duration-300">KostConsulting</a>
+                    </div>
+                    <div class="hidden md:block">
+                        <div class="ml-10 flex items-baseline space-x-4">
+                            <a href="#about" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">About</a>
+                            <a href="#process" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Process</a>
+                            <a href="#services" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Services</a>
+                            <a href="#reviews" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Reviews</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <button id="darkModeToggle" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">
+                        <i id="darkModeIcon" class="fas fa-sun"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+        
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('/assets/img/hero.jpg'); height: 800px;">
+            <div class="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-50"></div>
+            <div class="relative z-10 text-center text-white px-8 md:px-16 lg:px-24 max-w-5xl mx-auto">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
+                        Optimize Your Infrastructure, Maximize Your Savings
+                    
+                </h1>
+                <p class="text-lg md:text-xl lg:text-2xl mb-8">
+                    Expert FinOps, DevOps, and Web Development Services Tailored for Businesses.
+                </p>
+                <div class="mt-16">
+                    <p class="text-white mb-16">
+                        Start Transforming Your Business Today
+                    </p>
+                    <a href="#about" class="bounce-button text-white hover:text-blue-400 transition duration-300 inline-block">
+                        <i class="fas fa-chevron-down text-3xl animate-bounce"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white">About</h2>
+            
+            <div class="space-y-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-800 dark:text-cyan-400">Our Expertise</h3>
+                    <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                        At KostConsult, we specialize in delivering cost-efficient, high-performance solutions across DevOps, FinOps, and software development services tailored for businesses of all sizes.
+                    </p>
+                    <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                        Our goal is simple: to help companies cut costs, streamline operations, and achieve scalable, reliable infrastructure that supports sustainable growth.
+                    </p>
+                    <p class="text-lg text-gray-700 dark:text-gray-300">
+                        With a deep-rooted commitment to expertise and transparency, we provide comprehensive platform analyses, custom implementations, and ongoing support that optimize both functionality and budget.
+                    </p>
+                </div>
+    
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-800 dark:text-cyan-400">Mentorship Program</h3>
+                    <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                        In addition to consulting services, KostConsult offers a unique mentorship program aimed at nurturing the next generation of software professionals.
+                    </p>
+                    <p class="text-lg text-gray-700 dark:text-gray-300">
+                        Through hands-on, project-based learning, we equip students and junior developers with real-world experience, fostering skills that make them competitive in today's fast-paced tech landscape.
+                    </p>
+                </div>
+    
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-800 dark:text-cyan-400">Our Experience</h3>
+                    <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+                        Backed by extensive experience with companies, our team delivers solutions that not only solve current pain points but also lay the foundation for long-term success.
+                    </p>
+                    <p class="text-lg text-gray-700 dark:text-gray-300">
+                        Whether you're looking to reduce operational costs, enhance system reliability, or develop a new digital platform, KostConsult is your trusted partner in achieving these goals with efficiency and precision.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="mt-16 flex flex-col md:flex-row items-center md:items-start md:space-x-8">
+                <!-- Left side: Quote -->
+                <div class="w-full md:w-2/3 order-2 md:order-1 mt-8 md:mt-0">
+                    <blockquote class="relative">
+                        <svg class="absolute top-0 left-0 transform -translate-x-6 -translate-y-8 h-16 w-16 text-gray-300 dark:text-gray-700" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path d="M7.39762 10.3C7.39762 11.0733 7.14888 11.7 6.6514 12.18C6.15392 12.6333 5.52552 12.86 4.76621 12.86C3.84979 12.86 3.09047 12.5533 2.48825 11.94C1.91222 11.3266 1.62421 10.4467 1.62421 9.29999C1.62421 8.07332 1.96459 6.87332 2.64535 5.69999C3.35231 4.49999 4.33418 3.55332 5.59098 2.85999L6.4943 4.25999C5.81354 4.73999 5.26369 5.27332 4.84476 5.85999C4.45201 6.44666 4.19017 7.12666 4.05926 7.89999C4.29491 7.79332 4.56983 7.73999 4.88403 7.73999C5.61716 7.73999 6.21938 7.97999 6.69067 8.45999C7.16197 8.93999 7.39762 9.55333 7.39762 10.3ZM14.6242 10.3C14.6242 11.0733 14.3755 11.7 13.878 12.18C13.3805 12.6333 12.7521 12.86 11.9928 12.86C11.0764 12.86 10.3171 12.5533 9.71484 11.94C9.13881 11.3266 8.85079 10.4467 8.85079 9.29999C8.85079 8.07332 9.19117 6.87332 9.87194 5.69999C10.5789 4.49999 11.5608 3.55332 12.8176 2.85999L13.7209 4.25999C13.0401 4.73999 12.4903 5.27332 12.0713 5.85999C11.6786 6.44666 11.4168 7.12666 11.2858 7.89999C11.5215 7.79332 11.7964 7.73999 12.1106 7.73999C12.8437 7.73999 13.446 7.97999 13.9173 8.45999C14.3886 8.93999 14.6242 9.55333 14.6242 10.3Z" fill="currentColor"/>
+                        </svg>
+                        <p class="relative z-10 text-2xl italic text-gray-800 dark:text-white">
+                            KostConsult dedicates to empower businesses with cost-efficient, high-performance 
+                            solutions and nurturing the next generation of tech talent through hands-on mentorship.
+                        </p>
+                    </blockquote>
+                </div>
+                <!-- Right side: Image and Footer -->
+                <div class="w-full md:w-1/3 order-1 md:order-2 flex flex-col items-center">
+                    <div class="mb-4">
+                        <img src="/assets/img/christofher.jpg" alt="Christofher Kost" class="rounded-full shadow-lg w-48 h-48 object-cover">
+                    </div>
+                    <footer class="text-center">
+                        <p class="text-base font-semibold text-blue-800 dark:text-cyan-400">Christofher Kost</p>
+                        <p class="text-sm text-gray-600 dark:text-gray-400">CEO & Founder, KostConsult</p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section id="process" class="py-16 bg-white dark:bg-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white">Our Process</h2>
+            
+            <div class="max-w-2xl mx-auto">
+                <!-- Process steps -->
+                <div class="space-y-16">
+                    <!-- Initial Consultation -->
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center shadow-lg mx-auto mb-4">
+                            <i class="fas fa-handshake text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Initial Consultation</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-6">We begin by assessing your infrastructure and understanding your specific needs.</p>
+                        <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg">
+                            <p class="text-gray-600 dark:text-gray-300">Our team of experts will dive deep into your current setup, identifying pain points and areas for improvement.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Platform Analysis -->
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center shadow-lg mx-auto mb-4">
+                            <i class="fas fa-chart-bar text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Platform Analysis</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-6">Comprehensive cost analysis and system evaluation to identify areas for improvement.</p>
+                        <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg">
+                            <p class="text-gray-600 dark:text-gray-300">We use advanced tools and methodologies to analyze your platform, uncovering hidden inefficiencies and potential cost savings.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Actionable Recommendations -->
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center shadow-lg mx-auto mb-4">
+                            <i class="fas fa-clipboard-list text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Actionable Recommendations</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-6">A detailed report outlining the steps to achieve cost savings and performance enhancements.</p>
+                        <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg">
+                            <p class="text-gray-600 dark:text-gray-300">Our recommendations are tailored to your specific needs, providing a clear roadmap for optimization and growth.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Implementation & Ongoing Support -->
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-red-500 rounded-full flex items-center justify-center shadow-lg mx-auto mb-4">
+                            <i class="fas fa-cogs text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Implementation & Support</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-6">We handle implementation and provide post-contract support to ensure sustained results.</p>
+                        <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg">
+                            <p class="text-gray-600 dark:text-gray-300">Our team works alongside yours to implement changes and provides ongoing support to maximize long-term benefits.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Trophy -->
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center shadow-lg mx-auto mb-4">
+                            <i class="fas fa-trophy text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Success Achieved</h3>
+                        <p class="text-gray-600 dark:text-gray-300 mb-6">Enjoy the benefits of optimized infrastructure and reduced costs.</p>
+                        <div class="p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg">
+                            <p class="text-gray-600 dark:text-gray-300">Experience the transformative impact of our process on your business's efficiency and bottom line.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="services" class="bg-gray-100 dark:bg-gray-800 relative py-24 overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <h2 class="text-4xl font-bold mb-16 text-center text-gray-800 dark:text-white">Our Services</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Group Mentorship & Software Development Consultancy -->
+                <div class="service-card relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl bg-gray-200 bg-opacity-80 dark:bg-white dark:bg-opacity-10 backdrop-filter backdrop-blur-md">
+                    <div class="relative p-8 z-10">
+                        <i class="fas fa-users-cog text-5xl mb-4 text-gray-800 dark:text-white"></i>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Group Mentorship</h3>
+                        <p class="text-gray-700 dark:text-white mb-6">Enhance your skills with guided projects and real-world job experience.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-800 dark:text-white text-xl font-bold">€50/month
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- FinOps & DevOps Consultancy -->
+                <div class="service-card relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl bg-gray-200 bg-opacity-80 dark:bg-white dark:bg-opacity-10 backdrop-filter backdrop-blur-md">
+                    <div class="relative p-8 z-10">
+                        <i class="fas fa-chart-line text-5xl mb-4 text-gray-800 dark:text-white"></i>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">FinOps & DevOps</h3>
+                        <p class="text-gray-700 dark:text-white mb-6">Optimize your infrastructure and reduce costs by up to 70%.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-800 dark:text-white text-xl font-bold">€50/hour
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Website Development Services -->
+                <div class="service-card relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-2xl bg-gray-200 bg-opacity-80 dark:bg-white dark:bg-opacity-10 backdrop-filter backdrop-blur-md">
+                    <div class="relative p-8 z-10">
+                        <i class="fas fa-laptop-code text-5xl mb-4 text-gray-800 dark:text-white"></i>
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-800 dark:text-white">Web Development</h3>
+                        <p class="text-gray-700 dark:text-white mb-6">Custom websites with user-centric design and ongoing support.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-800 dark:text-white text-xl font-bold">€40/hour
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="mt-16 text-center">
+                <p class="text-lg text-gray-800 dark:text-gray-200 mb-4">All services offer a 20% discount for crypto payments</p>
+                <a href="#contact" class="inline-block bg-gray-200 bg-opacity-80 dark:bg-white dark:bg-opacity-20 text-gray-800 dark:text-white px-8 py-3 rounded-full hover:bg-opacity-100 dark:hover:bg-opacity-30 transition duration-300 shadow-lg backdrop-filter backdrop-blur-md">
+                    Schedule My Consultation
+                </a>
+            </div>
+        </div>
+    </section>   
+
+    <section id="reviews" class="py-16 bg-white dark:bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white">Reviews</h2>
+            
+            <div class="relative" id="reviewsCarousel">
+                <!-- Carousel container -->
+                <div class="overflow-hidden">
+                    <div class="flex transition-transform duration-300 ease-in-out" id="reviewsSlider">
+                        <!-- Review 1 -->
+                        <div class="w-full md:w-1/3 flex-shrink-0 p-4">
+                            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6 text-center h-full">
+                                <img src="/assets/img/arnis.png" alt="Arnis" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover">
+                                <h1 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Arnis</h1>
+                                <h3 class="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-4">Student at LookinLabs</h3>
+                                <p class="text-sm text-gray-600 dark:text-gray-300">
+                                    "KostConsulting is the ideal example of a true mentorship company. 
+                                    Over the past few months, their invaluable guidance and detailed code reviews—though challenging at times—have helped me gain a deeper 
+                                    understanding of best practices and write cleaner, well-structured code.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Review 2 -->
+                        <div class="w-full md:w-1/3 flex-shrink-0 p-4">
+                            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6 text-center h-full">
+                                <img src="/assets/img/uswitch_pavel.webp" alt="Pavel" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover">
+                                <h1 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Pavel</h1>
+                                <h3 class="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-4">Board Member at USwitch</h3>
+                                <p class="text-sm text-gray-600 dark:text-gray-300">
+                                    "KostConsult has transformed our business with their innovative solutions and exceptional service. 
+                                    Their expertise in FinOps helped us to make non-chargeable hosting available to us."
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- Review 3 -->
+                        <div class="w-full md:w-1/3 flex-shrink-0 p-4">
+                            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6 text-center h-full">
+                                <img src="/assets/img/veronika.png" alt="Veronika" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover">
+                                <h1 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Veronika</h1>
+                                <h3 class="text-sm font-semibold text-blue-600 dark:text-blue-400 mb-4">Student at Kood /</h3>
+                                <p class="text-sm text-gray-600 dark:text-gray-300">
+                                    "KostConsult embodies the true spirit of mentorship. Their approach is attentive and engaging, with a passion for education that treats each client like a friend.  
+                                    Working with KostConsult has been a major confidence booster. They don't simply hand over answers but equip you with the tools to discover them yourself."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="contact" class="py-8 bg-gray-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4">KostConsult</h2>
+                <p class="text-lg mb-2">info@kostconsult.com</p>
+                <p class="text-lg mb-6">+372 5555 5555</p>
+                <p id="copyright" class="text-sm text-gray-400"></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bottom Navigation for Mobile -->
+    <nav class="bottom-nav bg-white dark:bg-gray-800">
+        <a href="#home" class="bottom-nav-item flex-1">
+            <i class="fas fa-home text-xl"></i>
+            <span class="text-xs mt-1">Home
+        </a>
+        <div class="bottom-nav-item flex-1 relative" id="sectionsToggle">
+            <i class="fas fa-list text-xl"></i>
+            <span class="text-xs mt-1">Sections
+            <div class="sections-dropdown bg-white dark:bg-gray-800">
+                <a href="#about">About</a>
+                <a href="#process">Process</a>
+                <a href="#services">Services</a>
+                <a href="#reviews">Reviews</a>
+            </div>
+        </div>
+        <button id="darkModeToggleMobile" class="bottom-nav-item flex-1">
+            <i id="darkModeIconMobile" class="fas fa-sun text-xl"></i>
+            <span class="text-xs mt-1">Theme
+        </button>
+        <a href="#contact" class="bottom-nav-item flex-1">
+            <i class="fas fa-question-circle text-xl"></i>
+            <span class="text-xs mt-1">Contact</span>
+        </a>
+    </nav>
+    <script src="/assets/js/darkMode.js"></script>
+    <script src="/assets/js/mobileMenu.js"></script>
+</body>
+</html>

@@ -5,13 +5,15 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentPosition = 0;
     const slides = slider.children.length;
     let slideWidth = 100; // 100% for mobile, will be overridden for larger screens
+    let slidesPerView = 1; // 1 for mobile, 3 for desktop
+    let navigationButtons;
 
     function updateSliderPosition() {
-        slider.style.transform = `translateX(-${currentPosition * slideWidth}%)`;
+        slider.style.transform = `translateX(-${currentPosition * (slideWidth / slidesPerView)}%)`;
     }
 
     function nextSlide() {
-        if (currentPosition < slides - 1) {
+        if (currentPosition < slides - slidesPerView) {
             currentPosition++;
         } else {
             currentPosition = 0; // Loop back to the first slide
@@ -23,14 +25,14 @@ document.addEventListener('DOMContentLoaded', function() {
         if (currentPosition > 0) {
             currentPosition--;
         } else {
-            currentPosition = slides - 1; // Loop to the last slide
+            currentPosition = slides - slidesPerView; // Loop to the last set of slides
         }
         updateSliderPosition();
     }
 
     function createNavigationButtons() {
-        const navigationButtons = document.createElement('div');
-        navigationButtons.className = 'flex justify-center mt-8 space-x-4';
+        navigationButtons = document.createElement('div');
+        navigationButtons.className = 'flex justify-center mt-8 space-x-4 md:hidden'; // Hide by default on md+
         navigationButtons.innerHTML = `
             <button id="prevButton" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
@@ -59,12 +61,21 @@ document.addEventListener('DOMContentLoaded', function() {
         // Handle resize events
         function handleResize() {
             if (window.innerWidth >= 768) { // md breakpoint
-                slideWidth = 100 / 3;
-                if (currentPosition > slides - 3) {
-                    currentPosition = slides - 3;
+                slideWidth = 100;
+                slidesPerView = 3;
+                if (currentPosition > slides - slidesPerView) {
+                    currentPosition = slides - slidesPerView;
+                }
+                // Show arrows on md+ only if there are 4 or more slides
+                if (slides > 3) {
+                    navigationButtons.classList.remove('md:hidden');
+                } else {
+                    navigationButtons.classList.add('md:hidden');
                 }
             } else {
                 slideWidth = 100;
+                slidesPerView = 1;
+                navigationButtons.classList.remove('md:hidden'); // Always show on mobile
             }
             updateSliderPosition();
         }

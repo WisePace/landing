@@ -53,7 +53,7 @@
         
     <!-- Hero Section -->
     <section id="home">
-        <div class="relative h-screen flex items-center justify-center overflow-hidden" style="height: 800px;">
+        <!-- <div class="relative h-screen flex items-center justify-center overflow-hidden" style="height: 800px;">
             <video 
               class="absolute w-full h-full object-cover"
               autoplay 
@@ -62,7 +62,8 @@
               playsinline
             >
               <source src="/assets/img/network.mp4" type="video/mp4">
-            </video>
+            </video> -->
+        <div class="relative bg-cover bg-center flex items-center justify-center" style="background-image: url('/assets/img/hero.webp'); height: 725px;">
         <div class="absolute inset-0 bg-gradient-to-r from-gray-700 to-gray-800 opacity-50"></div>
             <div class="relative z-10 text-center text-white px-8 md:px-16 lg:px-24 max-w-5xl mx-auto">
                 <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
@@ -73,8 +74,8 @@
                 <p class="text-lg md:text-xl lg:text-2xl mb-8">
                     Expert FinOps, DevOps, and Web Development Services Tailored for Businesses
                 </p>
-                <div class="mt-16">
-                    <p class="text-white mb-8 mt-8">
+                <div class="md:mt-16">
+                    <p class="text-white mb-8 md:mt-8">
                         Start Transforming Your Business Today
                     </p>
                     <a id="open-popup-button" class="mb-8 text-2xl inline-block bg-cyan-500 bg-opacity-90 dark:bg-cyan-500 dark:bg-opacity-20 
@@ -82,7 +83,7 @@
                             transition duration-300 shadow-lg backdrop-filter backdrop-blur-md cursor-pointer">
                         Schedule Consultation
                     </a>
-                    <div class="mt-8">
+                    <div class="md:mt-8">
                         <a href="#about" class="bounce-button text-white hover:text-blue-400 transition duration-300 inline-block" aria-label="Scroll to About section">
                             <i class="fas fa-chevron-down text-3xl animate-bounce"></i>
                         </a>
@@ -360,9 +361,9 @@
     </nav>
     <script>
         AOS.init({
-          offset: 200,
+          offset: 0,
           duration: 600,
-          easing: 'ease-out',
+          easing: 'ease-in-out',
           delay: 100,
         });
       </script>

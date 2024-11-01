@@ -17,7 +17,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link href="/assets/css/main.css" rel="stylesheet">
 </head>
-<body class="bg-gray-200 text-gray-600 dark:bg-gray-800 dark:text-white transition-colors duration-300 pb-16 md:pb-0">
+<body class="bg-white text-gray-600 dark:bg-gray-800 dark:text-white transition-colors duration-300 pb-16 md:pb-0">
     <!-- Navbar -->
     <nav id="mainNav" class="fixed w-full z-20 top-0 left-0 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,9 +42,9 @@
                         </a>
                     </div>                                    
                 </div>
-                <div class="flex items-center">
+                <div class="hidden md:flex flex items-center">
                     <button id="darkModeToggle" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">
-                        <i id="darkModeIcon" class="fas fa-sun"></i>
+                        <i id="darkModeIcon" class="fas fa-star"></i>
                     </button>
                 </div>
             </div>
@@ -53,8 +53,17 @@
         
     <!-- Hero Section -->
     <section id="home">
-        <div class="relative h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('/assets/img/back.webp'); height: 800px;">
-            <div class="absolute inset-0 bg-gradient-to-r from-gray-700 to-gray-800 opacity-50"></div>
+        <div class="relative h-screen flex items-center justify-center overflow-hidden" style="height: 800px;">
+            <video 
+              class="absolute w-full h-full object-cover"
+              autoplay 
+              loop 
+              muted 
+              playsinline
+            >
+              <source src="/assets/img/network.mp4" type="video/mp4">
+            </video>
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-700 to-gray-800 opacity-50"></div>
             <div class="relative z-10 text-center text-white px-8 md:px-16 lg:px-24 max-w-5xl mx-auto">
                 <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
                     <span class="bg-clip-texts">
@@ -68,9 +77,16 @@
                     <p class="text-white mb-8 mt-8">
                         Start Transforming Your Business Today
                     </p>
-                    <a href="#about" class="bounce-button text-white hover:text-blue-400 transition duration-300 inline-block" aria-label="Scroll to About section">
-                        <i class="fas fa-chevron-down text-3xl animate-bounce"></i>
+                    <a id="open-popup-button" class="mb-8 mt-8 text-2xl inline-block bg-cyan-500 bg-opacity-90 dark:bg-cyan-500 dark:bg-opacity-20 
+                            text-white dark:text-white px-8 py-3 rounded-full hover:bg-cyan-500 dark:hover:bg-opacity-70 
+                            transition duration-300 shadow-lg backdrop-filter backdrop-blur-md cursor-pointer">
+                        Schedule My Consultation
                     </a>
+                    <div class="mt-8">
+                        <a href="#about" class="bounce-button text-white hover:text-blue-400 transition duration-300 inline-block" aria-label="Scroll to About section">
+                            <i class="fas fa-chevron-down text-3xl animate-bounce"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,9 +102,12 @@
                     <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
                         At WisePace, we specialize in delivering cost-efficient, high-performance solutions across DevOps, FinOps, and software development services tailored for businesses of all sizes.
                     </p>
-                    <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
-                        Our goal is simple: to help companies cut costs, streamline operations, and achieve scalable, reliable infrastructure that supports sustainable growth.
-                    </p>
+                    <p class="text-lg text-gray-700 dark:text-gray-300">Our goals are:</p>
+                        <ul class="text-lg text-gray-700 dark:text-gray-300 mb-4 list-disc list-inside">
+                            <li>Help your company cut costs</li>
+                            <li>Streamline your company operations</li>
+                            <li>Achieve scalable, reliable infrastructure that supports sustainable growth</li>
+                        </ul>
                     <p class="text-lg text-gray-700 dark:text-gray-300">
                         With a deep-rooted commitment to expertise and transparency, we provide comprehensive platform analyses, custom implementations, and ongoing support that optimize both functionality and budget.
                     </p>
@@ -123,7 +142,7 @@
                             <path d="M7.39762 10.3C7.39762 11.0733 7.14888 11.7 6.6514 12.18C6.15392 12.6333 5.52552 12.86 4.76621 12.86C3.84979 12.86 3.09047 12.5533 2.48825 11.94C1.91222 11.3266 1.62421 10.4467 1.62421 9.29999C1.62421 8.07332 1.96459 6.87332 2.64535 5.69999C3.35231 4.49999 4.33418 3.55332 5.59098 2.85999L6.4943 4.25999C5.81354 4.73999 5.26369 5.27332 4.84476 5.85999C4.45201 6.44666 4.19017 7.12666 4.05926 7.89999C4.29491 7.79332 4.56983 7.73999 4.88403 7.73999C5.61716 7.73999 6.21938 7.97999 6.69067 8.45999C7.16197 8.93999 7.39762 9.55333 7.39762 10.3ZM14.6242 10.3C14.6242 11.0733 14.3755 11.7 13.878 12.18C13.3805 12.6333 12.7521 12.86 11.9928 12.86C11.0764 12.86 10.3171 12.5533 9.71484 11.94C9.13881 11.3266 8.85079 10.4467 8.85079 9.29999C8.85079 8.07332 9.19117 6.87332 9.87194 5.69999C10.5789 4.49999 11.5608 3.55332 12.8176 2.85999L13.7209 4.25999C13.0401 4.73999 12.4903 5.27332 12.0713 5.85999C11.6786 6.44666 11.4168 7.12666 11.2858 7.89999C11.5215 7.79332 11.7964 7.73999 12.1106 7.73999C12.8437 7.73999 13.446 7.97999 13.9173 8.45999C14.3886 8.93999 14.6242 9.55333 14.6242 10.3Z" fill="currentColor"/>
                         </svg>
                         <p class="relative z-10 text-2xl italic text-gray-800 dark:text-white">
-                            WisePace dedicates to empower businesses with cost-efficient, high-performance 
+                            At WisePace we are dedicated to empower businesses with cost-efficient, high-performance 
                             solutions and nurturing the next generation of tech talent through hands-on mentorship.
                         </p>
                     </blockquote>
@@ -203,7 +222,7 @@
         </div>
     </section>
     
-    <section id="services" class="bg-gray-100 dark:bg-gray-800 relative py-24 overflow-hidden" data-aos="fade-up">
+    <section id="services" class="relative py-24 overflow-hidden" data-aos="fade-up">
         <div class="container mx-auto px-4 relative z-10">
             <h2 class="text-4xl font-bold mb-16 text-center text-cyan-800 dark:text-cyan-500">Our Services</h2>
             
@@ -247,9 +266,6 @@
     
             <div class="mt-16 text-center">
                 <p class="text-lg text-gray-800 dark:text-gray-200 mb-4">All services offer a 20% discount for crypto payments</p>
-                <a id="open-popup-button" class="text-2xl inline-block bg-cyan-800 bg-opacity-80 dark:bg-cyan-500 dark:bg-opacity-20 text-white dark:text-white px-8 py-3 rounded-full hover:bg-opacity-100 dark:hover:bg-opacity-30 transition duration-300 shadow-lg backdrop-filter backdrop-blur-md">
-                    Schedule My Consultation
-                </a>
             </div>
         </div>
     </section>   
@@ -264,7 +280,7 @@
                     <div class="flex transition-transform duration-300 ease-in-out" id="reviewsSlider">
                         <!-- Review 1 -->
                         <div class="w-full md:w-1/3 flex-shrink-0 p-4">
-                            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6 text-center h-full">
+                            <div class="bg-gray-200 bg-opacity-80 dark:bg-gray-700 rounded-lg shadow-lg p-6 text-center h-full">
                                 <img src="/assets/img/arnis.webp" alt="Arnis" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover">
                                 <h1 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Arnis</h1>
                                 <h3 class="text-sm font-semibold text-cyan-800 dark:text-cyan-500 mb-4">Student at LookinLabs</h3>
@@ -278,7 +294,7 @@
                         
                         <!-- Review 2 -->
                         <div class="w-full md:w-1/3 flex-shrink-0 p-4">
-                            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6 text-center h-full">
+                            <div class="bg-gray-200 bg-opacity-80 dark:bg-gray-700 rounded-lg shadow-lg p-6 text-center h-full">
                                 <img src="/assets/img/uswitch_pavel.webp" alt="Pavel" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover">
                                 <h1 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Pavel</h1>
                                 <h3 class="text-sm font-semibold text-cyan-800 dark:text-cyan-500 mb-4">Board Member at USwitch</h3>
@@ -291,7 +307,7 @@
                         
                         <!-- Review 3 -->
                         <div class="w-full md:w-1/3 flex-shrink-0 p-4">
-                            <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6 text-center h-full">
+                            <div class="bg-gray-200 bg-opacity-80 dark:bg-gray-700 rounded-lg shadow-lg p-6 text-center h-full">
                                 <img src="/assets/img/veronika.webp" alt="Veronika" class="w-20 h-20 rounded-full mx-auto mb-4 object-cover">
                                 <h1 class="text-xl font-bold text-gray-800 dark:text-white mb-2">Veronika</h1>
                                 <h3 class="text-sm font-semibold text-cyan-800 dark:text-cyan-500 mb-4">Student at Kood /</h3>
@@ -307,7 +323,7 @@
         </div>
     </section>
     
-    <footer id="contact" class="py-8 bg-gray-100 dark:bg-gray-800 text-cyan-800 dark:text-cyan-500" data-aos="fade-up">
+    <footer id="contact" class="py-8 text-cyan-800 dark:text-cyan-500" data-aos="fade-up">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center">
                 <h2 class="text-3xl font-bold mb-4">WisePace</h2>
@@ -334,10 +350,10 @@
             </div>
         </div>        
         <button id="darkModeToggleMobile" class="bottom-nav-item flex-1">
-            <i id="darkModeIconMobile" class="fas fa-sun text-xl"></i>
+            <i id="darkModeIconMobile" class="fas fa-star text-xl"></i>
             <span class="text-xs mt-1">Theme</span>
         </button>
-        <a href="#contact" class="bottom-nav-item flex-1">
+        <a id="open-popup-button" class="bottom-nav-item flex-1">
             <i class="fas fa-question-circle text-xl"></i>
             <span class="text-xs mt-1">Contact</span>
         </a>

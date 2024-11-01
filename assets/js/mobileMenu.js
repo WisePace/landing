@@ -7,13 +7,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         sectionsDropdown.style.display = sectionsDropdown.style.display === 'flex' ? 'none' : 'flex';
     });
 
-    // Close sections dropdown when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!sectionsToggle.contains(e.target)) {
-            closeDropdown();
-        }
-    });
-
     // Handle section link clicks
     const sectionLinks = sectionsDropdown.querySelectorAll('a');
     sectionLinks.forEach(link => {

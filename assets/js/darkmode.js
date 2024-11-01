@@ -2,11 +2,11 @@ function updateDarkModeIcon(isDark) {
     const icons = document.querySelectorAll('#darkModeIcon, #darkModeIconMobile');
     icons.forEach(icon => {
         if (isDark) {
-            icon.classList.remove('fa-sun');
+            icon.classList.remove('fa-star');
             icon.classList.add('fa-moon');
         } else {
             icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun');
+            icon.classList.add('fa-star');
         }
     });
 }

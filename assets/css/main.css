@@ -92,3 +92,10 @@ body {
 .dark .sections-dropdown a:hover {
     color: #D1D5DB; /* Slightly darker color for hover state in dark mode */
 }
+
+/* Projects */
+.description {
+    height: 4.5rem; /* Adjust the height as needed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

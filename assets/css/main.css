@@ -1,30 +1,9 @@
 body, h1, h2, h3, h4, h5, h6, p, a, button {
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Lora', sans-serif;
 }
 
 body {
     scroll-behavior: smooth;
-}
-
-.bounce-button {
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    border-radius: 50%;
-}
-
-.animate-bounce {
-    animation: bounce 0.3s infinite;
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(-25%);
-        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-    }
-    50% {
-        transform: translateY(0);
-        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-    }
 }
 
 .bottom-nav {

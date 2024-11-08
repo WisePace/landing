@@ -7,7 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="assets/js/tailwind_config.js"></script>
     <script src="assets/js/navbar.js"></script>
-    <script src="assets/js/carousel.js"></script>
     <script src="assets/js/copyright_updater.js"></script>
     <script src="assets/js/neetocal.js"></script>
     <script src="/assets/js/darkmode.js"></script>
@@ -36,6 +35,7 @@
                             <a href="#process" class="nav-link text-xl px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Process</a>
                             <a href="#benefits" class="nav-link text-xl px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Benefits</a>
                             <a href="#reviews" class="nav-link text-xl px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Reviews</a>
+                            <a href="#contact" class="nav-link text-xl px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Contact</a>
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                 </p>
                 <div class="md:mt-16">
                     <div class="flex justify-center space-x-4">
-                        <a id="open-popup-button" class="inline-block text-md md:text-xl bg-cyan-500 bg-opacity-40 dark:bg-cyan-500 dark:bg-opacity-20 
+                        <a href="#contact" class="inline-block text-md md:text-xl bg-cyan-500 bg-opacity-40 dark:bg-cyan-500 dark:bg-opacity-20 
                             text-white dark:text-white px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-opacity-100 dark:hover:bg-cyan-500 
                             transition duration-300 shadow-lg backdrop-filter backdrop-blur-md cursor-pointer">
                             <i class="fas fa-calendar-alt mr-2"></i>
@@ -311,7 +311,7 @@
         </div>
     </section>
 
-    <section id="contact" class="py-16 bg-gray-100 dark:bg-gray-900 text-black dark:text-white" data-aos="fade-up">
+    <section id="contact" class="py-8 bg-gray-100 dark:bg-gray-900 text-black dark:text-white" data-aos="fade-up">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Card 1: Text content -->
@@ -340,6 +340,7 @@
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto text-center">
                 <img id="footerLogo" src="/assets/img/logo_white.svg" alt="Wisepace Logo" class="h-44 mx-auto mb-4">
+                <p id="copyright" class="text-sm text-gray-400"></p>
             </div>
         </div>
     </footer>
@@ -364,6 +365,10 @@
             <i id="darkModeIconMobile" class="fas fa-star text-xl"></i>
             <span class="text-xs mt-1">Theme</span>
         </button>
+        <a href="#contact" class="bottom-nav-item flex-1" id="mobileContactLink">
+            <i class="fas fa-question-circle text-xl"></i>
+            <span class="text-xs mt-1">Contact</span>
+        </a>        
     </nav>
     <script>
         AOS.init({

@@ -12,6 +12,7 @@
     <script src="/assets/js/darkmode.js"></script>
     <script src="/assets/js/read_smooth.js"></script>
     <script src="/assets/js/logo_changer.js"></script>
+    <script src="/assets/js/hero-section-icons.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
@@ -54,39 +55,86 @@
             </div>
         </div>
     </nav>
-        
-    <!-- Hero Section -->
+
+   <!-- Hero Section -->
     <section id="home">
         <div class="relative bg-cover bg-center flex items-center justify-center" style="background-image: url('/assets/img/hero.webp'); height: 725px;">
             <div class="absolute inset-0 bg-gradient-to-r from-gray-700 to-gray-800 opacity-50"></div>
-            <div class="relative z-10 text-center text-white px-8 md:px-16 lg:px-24 max-w-5xl mx-auto">
-                <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                    Get your dream job in IT just in 6 months!
-                </h1>
-                <p class="text-lg md:text-xl lg:text-2xl mb-8">
-                    Join Wisepace and fast-track your journey to landing your dream IT role with our unique learning approach.
-                </p>
-                <div class="md:mt-16">
-                    <div class="flex justify-center space-x-4">
-                        <a href="#contact" class="inline-block text-md md:text-xl bg-cyan-500 bg-opacity-40 dark:bg-cyan-500 dark:bg-opacity-20 
-                            text-white dark:text-white px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-opacity-100 dark:hover:bg-cyan-500 
-                            transition duration-300 shadow-lg backdrop-filter backdrop-blur-md cursor-pointer">
-                            <i class="fas fa-calendar-alt mr-2"></i>
-                            Contact us
-                        </a>
-                        <a id="read-more-button" href="#about" class="inline-block text-md md:text-xl bg-slate-200 dark:bg-gray-800 
-                            text-cyan-800 dark:text-white px-4 py-2 md:px-6 md:py-3 rounded-full 
-                            hover:bg-white dark:hover:bg-gray-700 transition duration-300 shadow-lg 
-                            backdrop-filter backdrop-blur-md cursor-pointer">
-                            <i class="fas fa-book-open mr-2"></i>
-                            Learn more
-                        </a>
+            <div class="relative z-10 text-white px-8 md:px-16 lg:px-24 max-w-5xl mx-auto flex flex-col md:flex-row items-center">
+                <!-- Left side: Text and Buttons -->
+                <div class="w-full md:w-7/12 text-center md:text-left md:mr-8">
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+                        Most innovative learning academy for IT professionals
+                    </h1>
+                    <p class="text-lg md:text-xl lg:text-2xl mb-8">
+                        Join us to fast-track your journey towards landing your dream role in the tech industry.
+                    </p>
+                    <div class="md:mt-16">
+                        <div class="flex justify-center md:justify-start space-x-4">
+                            <a href="#contact" class="inline-block text-md md:text-xl bg-cyan-500 bg-opacity-40 dark:bg-cyan-500 dark:bg-opacity-20 
+                                text-white px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-opacity-100 
+                                transition duration-300 shadow-lg backdrop-filter backdrop-blur-md cursor-pointer">
+                                <i class="fas fa-calendar-alt mr-2"></i>
+                                Contact us
+                            </a>
+                            <a id="read-more-button" href="#about" class="inline-block text-md md:text-xl bg-slate-200 dark:bg-gray-800 
+                                text-cyan-800 dark:text-white px-4 py-2 md:px-6 md:py-3 rounded-full 
+                                hover:bg-white transition duration-300 shadow-lg 
+                                backdrop-filter backdrop-blur-md cursor-pointer">
+                                <i class="fas fa-book-open mr-2"></i>
+                                Learn more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right side: Stats -->
+                <div class="w-full md:w-5/12 mt-8 md:mt-0">
+                    <div class="flex flex-wrap md:grid md:grid-cols-2 gap-4 md:gap-12 justify-center md:justify-start">
+                        <!-- Stat Item 1 -->
+                        <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="100">
+                            <div class="p-1 md:p-4 bg-transparent dark:bg-gray-800 rounded-full">
+                                <i class="fas fa-users text-2xl md:text-5xl text-white"></i>
+                            </div>
+                            <h3 class="text-lg md:text-xl font-bold mt-2">
+                                <span class="counter" data-target="4">0</span>+
+                            </h3>
+                            <p class="text-xs md:text-lg text-center">Total Students</p>
+                        </div>
+                        <!-- Stat Item 2 -->
+                        <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="200">
+                            <div class="p-1 md:p-4 bg-transparent dark:bg-gray-800 rounded-full">
+                                <i class="fas fa-user-graduate text-2xl md:text-5xl text-white"></i>
+                            </div>
+                            <h3 class="text-lg md:text-xl font-bold mt-2">
+                                <span class="counter" data-target="2">0</span>
+                            </h3>
+                            <p class="text-xs md:text-lg text-center">Active Students</p>
+                        </div>
+                        <!-- Stat Item 3 -->
+                        <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="300">
+                            <div class="p-1 md:p-4 bg-transparent dark:bg-gray-800 rounded-full">
+                                <i class="fas fa-star text-2xl md:text-5xl text-white"></i>
+                            </div>
+                            <h3 class="text-lg md:text-xl font-bold mt-2">
+                                <span class="counter" data-target="5">0</span>+
+                            </h3>
+                            <p class="text-xs md:text-lg text-center">Positive Reviews</p>
+                        </div>
+                        <!-- Stat Item 4 -->
+                        <div class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="400">
+                            <div class="p-1 md:p-4 bg-transparent dark:bg-gray-800 rounded-full">
+                                <i class="fas fa-briefcase text-2xl md:text-5xl text-white"></i>
+                            </div>
+                            <h3 class="text-lg md:text-xl font-bold mt-2">
+                                <span class="counter" data-target="2">0</span>
+                            </h3>
+                            <p class="text-xs md:text-lg text-center">Employment Achieved</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <section id="about" class="py-16" data-aos="fade-up">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-4xl font-bold mb-12 text-center text-cyan-800 dark:text-cyan-500">About</h2>
@@ -99,7 +147,7 @@
                         When you try to gain experience, you are rejected because you don't have experience.
                     </p>
                     <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
-                        Here steps in WisePace, a mentorship program that helps aspiring IT professionals land their dream jobs in just a few months. 
+                        Here steps in Wisepace, a mentorship program that helps aspiring IT professionals land their dream jobs in just a few months. 
                         We offer a unique learning approach that accelerates your journey into the IT industry, providing you with the skills and experience needed to succeed.
                     </p>
                     <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
@@ -120,7 +168,7 @@
                                 <path d="M7.39762 10.3C7.39762 11.0733 7.14888 11.7 6.6514 12.18C6.15392 12.6333 5.52552 12.86 4.76621 12.86C3.84979 12.86 3.09047 12.5533 2.48825 11.94C1.91222 11.3266 1.62421 10.4467 1.62421 9.29999C1.62421 8.07332 1.96459 6.87332 2.64535 5.69999C3.35231 4.49999 4.33418 3.55332 5.59098 2.85999L6.4943 4.25999C5.81354 4.73999 5.26369 5.27332 4.84476 5.85999C4.45201 6.44666 4.19017 7.12666 4.05926 7.89999C4.29491 7.79332 4.56983 7.73999 4.88403 7.73999C5.61716 7.73999 6.21938 7.97999 6.69067 8.45999C7.16197 8.93999 7.39762 9.55333 7.39762 10.3ZM14.6242 10.3C14.6242 11.0733 14.3755 11.7 13.878 12.18C13.3805 12.6333 12.7521 12.86 11.9928 12.86C11.0764 12.86 10.3171 12.5533 9.71484 11.94C9.13881 11.3266 8.85079 10.4467 8.85079 9.29999C8.85079 8.07332 9.19117 6.87332 9.87194 5.69999C10.5789 4.49999 11.5608 3.55332 12.8176 2.85999L13.7209 4.25999C13.0401 4.73999 12.4903 5.27332 12.0713 5.85999C11.6786 6.44666 11.4168 7.12666 11.2858 7.89999C11.5215 7.79332 11.7964 7.73999 12.1106 7.73999C12.8437 7.73999 13.446 7.97999 13.9173 8.45999C14.3886 8.93999 14.6242 9.55333 14.6242 10.3Z"></path>
                             </svg>
                             <p class="relative z-10 text-2xl italic text-gray-800 dark:text-white">
-                                "At WisePace, we are committed to empowering aspiring IT professionals to achieve their career goals through proven industry practices."
+                                "At Wisepace, we are committed to empowering aspiring IT professionals to achieve their career goals through proven industry practices."
                             </p>
                         </blockquote>
                     </div>
@@ -131,7 +179,7 @@
                         </div>
                         <footer class="text-center">
                             <p class="text-base font-semibold text-cyan-800 dark:text-cyan-500">Christofher Kost</p>
-                            <p class="text-sm text-gray-600 dark:text-gray-400">CEO & Founder, WisePace</p>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Entrepreneur, Wisepace</p>
                         </footer>
                     </div>
                 </div>

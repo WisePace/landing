@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
             type: "elementClick",
             id: "0a7f15d6-b793-4403-b7cd-841d178a4a9d",
             organization: "wisepace-team",
-            elementSelector: "#open-popup-button",
+            elementSelector: "#open-popup-button-contact",
             isSidebarAndCoverImgHidden: "true"
         });
     };

@@ -6,48 +6,61 @@
   <title>Wisepace - IT Educational Academy</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/copyright.js" defer></script>
+  <script src="assets/js/neetocal.js" defer></script>
+  <script src="assets/js/mobileMenu.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 <body class="bg-white text-black">
+<!-- Smooth Scrolling -->
+<script>
+    AOS.init({
+        offset: 0,
+        duration: 600,
+        easing: 'ease-in-out',
+        delay: 100,
+    });
+</script>
 
-  <!-- Navbar -->
-  <header class="bg-white fixed w-full z-20 top-0 shadow-md">
+<!-- Navbar -->
+<header class="bg-white fixed w-full z-20 top-0 shadow-md">
     <nav class="container mx-auto px-4 lg:px-8 flex justify-between items-center py-4">
-      <a href="#" class="text-2xl font-bold text-black">Wisepace</a>
-      <div class="hidden lg:flex space-x-8 text-lg">
+      <a href="#" class="flex items-center space-x-4">
+        <h2 class="text-3xl font-semibold">Wisepace</h2>
+      </a>
+      <div class="hidden lg:flex space-x-8 text-lg items-center">
         <a href="#about" class="hover:text-gray-500 transition-colors duration-200 text-black">About</a>
         <a href="#benefits" class="hover:text-gray-500 transition-colors duration-200 text-black">Benefits</a>
         <a href="#reviews" class="hover:text-gray-500 transition-colors duration-200 text-black">Reviews</a>
         <a href="#contact" class="hover:text-gray-500 transition-colors duration-200 text-black">Contact</a>
-        <a href="#meeting" class="px-4 py-2 bg-black text-white rounded-lg text-sm font-semibold hover:bg-gray-800">
-          Book a Meeting
-        </a>
       </div>
-      <button id="menu-btn" class="lg:hidden text-black text-2xl focus:outline-none">
-        <i class="fas fa-bars"></i>
-      </button>
+      <div class="flex lg:hidden items-center space-x-4">
+        <button id="menu-btn" class="text-black text-2xl focus:outline-none">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
     </nav>
     <div id="mobile-menu" class="hidden bg-white lg:hidden">
       <a href="#about" class="block px-4 py-2 border-b border-gray-200 hover:bg-gray-200 text-black">About</a>
       <a href="#benefits" class="block px-4 py-2 border-b border-gray-200 hover:bg-gray-200 text-black">Benefits</a>
       <a href="#reviews" class="block px-4 py-2 border-b border-gray-200 hover:bg-gray-200 text-black">Reviews</a>
       <a href="#contact" class="block px-4 py-2 hover:bg-gray-200 text-black">Contact</a>
-      <a href="#meeting" class="block px-4 py-2 hover:bg-gray-200 text-black">Book a Meeting</a>
     </div>
   </header>
 
-
   <!-- Hero Section -->
-  <section class="relative bg-center bg-cover h-screen text-white" style="background-image: url('https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg');">
+  <section class="relative bg-center bg-cover h-screen text-white" style="background-image: url('/assets/img/itlearn.webp');">
     <div class="bg-black/50 w-full h-full absolute top-0 left-0"></div>
     <div class="container mx-auto px-4 lg:px-12 h-full flex items-center relative">
       <div class="text-center lg:text-left">
         <h1 class="text-5xl font-bold mb-6">
           <span class="gold-text">Wisepace</span>: Redefining IT Education
         </h1>
-        <p class="text-lg leading-relaxed mb-6">
-          Empowering students with a <span class="font-semibold">work-based learning approach</span>. Fast-track your career by gaining hands-on experience, developing real-world products, and building a standout CV and LinkedIn profile.
+        <p class="text-xl leading-relaxed mb-6">
+          Empowering students with a <span class="font-semibold">work-based learning approach</span>. Fast-track your career by gaining hands-on experience, developing real-world products, and building a standout CV profile.
         </p>
         <div class="flex flex-col sm:flex-row sm:space-x-4">
           <a href="#about" class="px-8 py-4 btn-primary rounded-lg text-lg font-semibold mb-4 sm:mb-0">
@@ -63,33 +76,79 @@
 
   <!-- About Section -->
   <section id="about" class="bg-gray-50 py-16 text-black">
-    <div class="container mx-auto px-4 lg:px-12 text-center">
-      <h2 class="text-4xl font-bold mb-6">About <span class="gold-text">Wisepace</span></h2>
-      <p class="text-lg text-gray-500 mb-12">
-        Our mission is to fast-track your journey to a fulfilling IT career. We emphasize practical learning, teamwork, and industry connections to prepare you for success.
-      </p>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="container mx-auto px-4 lg:px-12 space-y-16">
+      
+      <!-- About Wisepace -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <!-- Text -->
         <div>
-          <img src="https://images.pexels.com/photos/3184300/pexels-photo-3184300.jpeg" alt="About Wisepace" class="rounded-lg shadow-md">
-        </div>
-        <div class="flex flex-col justify-center">
-          <p class="mb-6 leading-relaxed">
-            At Wisepace, we don’t just teach IT skills; we prepare you for the demands of the industry. By working on real customer products in collaborative teams, students gain valuable experience while learning essential soft skills.
+          <h2 class="text-4xl font-bold mb-4">
+            About <span class="gold-text">Wisepace</span>
+          </h2>
+          <p class="text-lg leading-relaxed text-gray-600">
+            Wisepace is an IT Educational Academy that offers a unique learning experience to passionate IT enthusiasts.
+            Our programs bridge the gap between traditional education and industry demands. 
           </p>
-          <ul>
-            <li class="mb-4 flex items-center">
-              <i class="fas fa-laptop-code text-black mr-3"></i>
-              Hands-on training with industry-standard tools.
-            </li>
-            <li class="mb-4 flex items-center">
-              <i class="fas fa-file-alt text-black mr-3"></i>
-              Build your CV and LinkedIn profile with confidence.
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-users text-black mr-3"></i>
-              Be mentored by industry professionals.
-            </li>
-          </ul>
+          <p class="text-lg leading-relaxed text-gray-600 mt-4">
+            At Wisepace, students gain hands-on experience by working on real-world projects, 
+            building production-grade applications, and collaborating with seasoned industry professionals.
+          </p>
+        </div>
+        <!-- Image -->
+        <div>
+          <img src="https://images.pexels.com/photos/3184300/pexels-photo-3184300.jpeg" 
+               alt="About Wisepace" 
+               class="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+        </div>
+      </div>
+      
+      <!-- Our Mission -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <!-- Image -->
+        <div class="order-2 md:order-1">
+          <img src="/assets/img/scale.webp" 
+               alt="Our Mission" 
+               class="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+        </div>
+        <!-- Text -->
+        <div class="order-1 md:order-2">
+          <h2 class="text-4xl font-bold mb-4">
+            Our <span class="gold-text">Mission</span>
+          </h2>
+          <p class="text-lg leading-relaxed text-gray-600">
+            Our mission is to help students develop the necessary skills, knowledge, and confidence to succeed in their dream careers.
+          </p>
+          <p class="text-lg leading-relaxed text-gray-600 mt-4">
+            At Wisepace, we provide junior developers with the essential soft and analytical skills often overlooked by other IT bootcamps and educational institutes. 
+          </p>
+          <p class="text-lg leading-relaxed text-gray-600 mt-4">
+            By the end of the program, our students graduate with a professional profile, hands-on expertise, and job offers that kickstart their careers in tech.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Our Vision -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <!-- Text -->
+        <div>
+          <h2 class="text-4xl font-bold mb-4">
+            Our <span class="gold-text">Vision</span>
+          </h2>
+          <p class="text-lg leading-relaxed text-gray-600 mb-4">
+            At Wisepace, we envision a world where education is hands-on, relevant, and aligned with industry expectations, helping students achieve their dream careers.
+          </p>
+          <p class="text-lg leading-relaxed text-gray-600">
+            Over the next 10 to 20 years, Wisepace will evolve into Pace Group, a dynamic organization that leads in education, IT consulting, and lifestyle brands. 
+          </p>
+          <p class="text-lg leading-relaxed text-gray-600 mt-4">
+            Our graduates will consistently stand out as top-tier IT professionals, driving innovation and shaping the future of technology.
+          </p>
+        </div>
+        <!-- Image -->
+        <div>
+          <img src="/assets/img/future.webp" 
+               alt="Our Vision" 
+               class="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 h-96 w-full">
         </div>
       </div>
     </div>
@@ -139,46 +198,68 @@
   <!-- Reviews Section -->
   <section id="reviews" class="bg-gray-100 py-16">
     <div class="container mx-auto px-4 lg:px-12 text-center">
-      <h2 class="text-4xl font-bold text-black mb-6">What Our Students Say</h2>
+      <h2 class="text-4xl font-bold text-black mb-6">What Our Students Say?</h2>
       <p class="text-lg text-gray-600 mb-12">
         Hear from our graduates who are thriving in their careers thanks to Wisepace.
       </p>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
         <!-- Review Card -->
-        <div class="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
           <div class="mb-4">
             <p class="italic text-gray-600 leading-relaxed">
-              "Wisepace gave me the skills to excel in the IT world. I landed a job within weeks of graduating!"
+                "The mentors at Wisepace provided invaluable insights, helping me grasp concepts, avoid mistakes, and build confidence. 
+                Their guidance secured my first job offer."
             </p>
           </div>
-          <div class="mt-6">
-            <p class="font-bold text-black">Alex P.</p>
-            <p class="text-sm text-gray-500">Software Developer</p>
+          <div class="mt-6 text-center">
+            <p class="font-bold text-black">Nikita B.</p>
+            <p class="text-sm text-gray-500">Software Developer @ Zerofy</p>
           </div>
         </div>
         <!-- Review Card -->
-        <div class="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
           <div class="mb-4">
             <p class="italic text-gray-600 leading-relaxed">
-              "The hands-on projects prepared me better than any traditional course ever could."
+                "Wisepace's mentorship and detailed code reviews helped me understand best practices and write cleaner, well-structured code."
             </p>
           </div>
-          <div class="mt-6">
-            <p class="font-bold text-black">Maria K.</p>
-            <p class="text-sm text-gray-500">Data Analyst</p>
+          <div class="mt-6 text-center">
+            <p class="font-bold text-black">Arnis Z.</p>
+            <p class="text-sm text-gray-500">Mentor @ Kood Jõhvi</p>
           </div>
         </div>
         <!-- Review Card -->
-        <div class="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <div class="p-8 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col justify-between">
           <div class="mb-4">
             <p class="italic text-gray-600 leading-relaxed">
-              "Working in a team on real products was invaluable. I feel job-ready!"
+                "Wisepace’s engaging approach and guidance boosted my confidence, equipping me with the tools to solve problems independently."
             </p>
           </div>
-          <div class="mt-6">
-            <p class="font-bold text-black">James T.</p>
-            <p class="text-sm text-gray-500">Frontend Engineer</p>
+          <div class="mt-6 text-center">
+            <p class="font-bold text-black">Veronika K.</p>
+            <p class="text-sm text-gray-500">Student @ Wisepace</p>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- FAQ Section -->
+  <section id="faq" class="bg-white py-16 text-black">
+    <div class="container mx-auto px-4 lg:px-12">
+      <h2 class="text-4xl font-bold text-center mb-6">Frequently Asked <span class="gold-text">Questions</span></h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <h3 class="font-semibold mb-2">What is the duration of each program?</h3>
+          <p class="text-gray-600 mb-6">Each program typically lasts 8 to 12 weeks, depending on the track you choose.</p>
+          <h3 class="font-semibold mb-2">Do I need prior coding experience?</h3>
+          <p class="text-gray-600 mb-6">Minimum coding experience required. We welcome beginners as well as those looking to advance their skills.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Are the courses online or in-person?</h3>
+          <p class="text-gray-600 mb-6">Our courses are primarily online, but we occasionally host in-person events and workshops.</p>
+          <h3 class="font-semibold mb-2">What kind of support will I receive?</h3>
+          <p class="text-gray-600">Our mentors and instructors provide 1:1 guidance, and you'll also collaborate with peers in a team environment.</p>
         </div>
       </div>
     </div>
@@ -187,11 +268,11 @@
   <!-- Contact Section -->
   <section id="contact" class="bg-black text-white py-16">
     <div class="container mx-auto px-4 lg:px-12 text-center">
-      <h2 class="text-4xl font-bold mb-6">Want to Speak Directly?</h2>
+      <h2 class="text-4xl font-bold mb-6">Contact Us!</h2>
       <p class="text-lg text-gray-300 mb-8">
         Schedule a one-on-one meeting to discuss your goals and see how Wisepace can help you achieve them.
       </p>
-      <a href="mailto:book@wisepace.com" class="px-8 py-4 bg-white text-black rounded-lg text-lg font-semibold hover:shadow-lg">
+      <a href="#meeting" id="open-popup-button-contact" class="px-8 py-4 bg-white text-black rounded-lg text-lg font-semibold hover:shadow-lg">
         Book a Meeting
       </a>
     </div>
@@ -200,24 +281,14 @@
   <!-- Footer -->
   <footer class="bg-gray-800 text-gray-400 py-6">
     <div class="container mx-auto text-center">
-      <p class="font-bold text-white mb-2">Wisepace</p>
-      <p class="mb-2">Email: <a href="mailto:info@wisepace.com" class="hover:text-gray-200">info@wisepace.com</a></p>
+      <a href="#">
+        <img src="/assets/img/logo_white.svg" alt="Logotype" class="h-40 mx-auto mb-2">
+      </a>
+      <p class="mb-2">
+        <a href="mailto:info@wisepace.org" class="hover:text-gray-200">info@wisepace.org</a>
+      </p>
       <p id="copyright"></p>
     </div>
   </footer>
-
-  <!-- Script -->
-  <script>
-    const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    // Update copyright year automatically
-    const year = new Date().getFullYear();
-    document.getElementById("copyright").innerHTML = `&copy; ${year} Wisepace. All rights reserved.`;
-  </script>
 </body>
 </html>

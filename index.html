@@ -15,41 +15,41 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 <body class="bg-white text-black">
-<!-- Smooth Scrolling -->
-<script>
-    AOS.init({
-        offset: 0,
-        duration: 600,
-        easing: 'ease-in-out',
-        delay: 100,
-    });
-</script>
-
+  <!-- Smooth Scrolling -->
+  <script>
+      AOS.init({
+          offset: 0,
+          duration: 600,
+          easing: 'ease-in-out',
+          delay: 100,
+      });
+  </script>
 <!-- Navbar -->
 <header class="bg-white fixed w-full z-20 top-0 shadow-md">
-    <nav class="container mx-auto px-4 lg:px-8 flex justify-between items-center py-4">
-      <a href="#" class="flex items-center space-x-4">
-        <img src="/assets/img/black_text_transparent.webp" alt="Logotype" class="h-20">
-      </a>
-      <div class="hidden lg:flex space-x-8 text-lg items-center">
-        <a href="#about" class="hover:text-gray-500 transition-colors duration-200 text-black">About</a>
-        <a href="#benefits" class="hover:text-gray-500 transition-colors duration-200 text-black">Benefits</a>
-        <a href="#reviews" class="hover:text-gray-500 transition-colors duration-200 text-black">Reviews</a>
-        <a href="#contact" class="hover:text-gray-500 transition-colors duration-200 text-black">Contact</a>
-      </div>
-      <div class="flex lg:hidden items-center space-x-4">
-        <button id="menu-btn" class="text-black text-2xl focus:outline-none">
-          <i class="fas fa-bars"></i>
-        </button>
-      </div>
-    </nav>
-    <div id="mobile-menu" class="hidden bg-white lg:hidden">
-      <a href="#about" class="block px-4 py-2 border-b border-gray-200 hover:bg-gray-200 text-black">About</a>
-      <a href="#benefits" class="block px-4 py-2 border-b border-gray-200 hover:bg-gray-200 text-black">Benefits</a>
-      <a href="#reviews" class="block px-4 py-2 border-b border-gray-200 hover:bg-gray-200 text-black">Reviews</a>
-      <a href="#contact" class="block px-4 py-2 hover:bg-gray-200 text-black">Contact</a>
+  <nav class="container mx-auto px-4 lg:px-8 flex justify-between items-center py-4">
+    <a href="#" class="flex items-center space-x-4">
+      <img src="/assets/img/black_text_transparent.webp" alt="Logotype" class="h-20">
+    </a>
+    <div class="hidden lg:flex space-x-8 text-lg items-center">
+      <a href="#about" class="hover:text-gray-500 transition-colors duration-200 text-black">About</a>
+      <a href="#benefits" class="hover:text-gray-500 transition-colors duration-200 text-black">Benefits</a>
+      <a href="#reviews" class="hover:text-gray-500 transition-colors duration-200 text-black">Reviews</a>
+      <a href="#contact" class="hover:text-gray-500 transition-colors duration-200 text-black">Contact</a>
     </div>
-  </header>
+    <div class="flex lg:hidden items-center space-x-4">
+      <button id="menu-btn" class="text-black text-2xl focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+  <div id="mobile-menu" class="hidden bg-white lg:hidden">
+    <a href="#about" class="block px-4 py-2 border-b border-gray-200 hover:bg-gray-200 text-black">About</a>
+    <a href="#benefits" class="block px-4 py-2 border-b border-gray-200 hover:bg-gray-200 text-black">Benefits</a>
+    <a href="#reviews" class="block px-4 py-2 border-b border-gray-200 hover:bg-gray-200 text-black">Reviews</a>
+    <a href="#contact" class="block px-4 py-2 hover:bg-gray-200 text-black">Contact</a>
+  </div>
+</header>
+
 
   <!-- Hero Section -->
   <section class="relative bg-center bg-cover h-screen text-white" style="background-image: url('/assets/img/itlearn.webp');">
@@ -165,44 +165,6 @@
         </div>
       </div>
     </div>
-    <div class="container mx-auto px-4 lg:px-12 space-y-16 mt-16">
-      <div class="text-center">
-        <h2 class="text-4xl font-bold mb-4">
-          Outcomes for <span class="gold-text">Students</span>
-        </h2>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-        <div class="space-y-4">
-          <div class="flex items-start space-x-4">
-            <i class="fas fa-project-diagram gold-text text-2xl"></i>
-            <p class="text-lg leading-relaxed text-gray-600">
-              Gain comprehensive knowledge of agile development methodology.
-            </p>
-          </div>
-          <div class="flex items-start space-x-4">
-            <i class="fas fa-code gold-text text-2xl"></i>
-            <p class="text-lg leading-relaxed text-gray-600">
-              Master coding best practices, including SOLID principles, Given-When-Then testing, the 12-factor app methodology and more.
-              Check our principles <a href="https://principles.wisepace.org/" class="text-blue-500 hover:underline">here</a>.
-            </p>
-          </div>
-        </div>
-        <div class="space-y-4">
-          <div class="flex items-start space-x-4">
-            <i class="fas fa-users gold-text text-2xl"></i>
-            <p class="text-lg leading-relaxed text-gray-600">
-              Deep knowledge of team development, task management, automation and collaboration tools (e.g Atlassian, Slack, Github)
-            </p>
-          </div>
-          <div class="flex items-start space-x-4">
-            <i class="fas fa-briefcase gold-text text-2xl"></i>
-            <p class="text-lg leading-relaxed text-gray-600">
-              Understand how to develop according to business needs, not just coding for the sake of it.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 
   <!-- Benefits Section -->
@@ -242,6 +204,44 @@
           <p>
             Build a CV and LinkedIn profile that showcase your capabilities and achievements.
           </p>
+        </div>
+      </div>
+    </div>
+    <div class="container mx-auto px-4 lg:px-12 space-y-16 mt-16">
+      <div class="text-center">
+        <h2 class="text-4xl font-bold mb-4">
+          Outcomes for <span class="gold-text">Students</span>
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <div class="space-y-4">
+          <div class="flex items-start space-x-4">
+            <i class="fas fa-project-diagram gold-text text-2xl"></i>
+            <p class="text-lg leading-relaxed">
+              Gain comprehensive knowledge of agile development methodology.
+            </p>
+          </div>
+          <div class="flex items-start space-x-4">
+            <i class="fas fa-code gold-text text-2xl"></i>
+            <p class="text-lg leading-relaxed">
+              Master coding best practices, including SOLID principles, Given-When-Then testing, the 12-factor app methodology and more.
+              Check our principles <a href="https://principles.wisepace.org/" class="text-blue-500 hover:underline">here</a>.
+            </p>
+          </div>
+        </div>
+        <div class="space-y-4">
+          <div class="flex items-start space-x-4">
+            <i class="fas fa-users gold-text text-2xl"></i>
+            <p class="text-lg leading-relaxed">
+              Deep knowledge of team development, task management, automation and collaboration tools (e.g Atlassian, Slack, Github)
+            </p>
+          </div>
+          <div class="flex items-start space-x-4">
+            <i class="fas fa-briefcase gold-text text-2xl"></i>
+            <p class="text-lg leading-relaxed">
+              Understand how to develop according to business needs, not just coding for the sake of it.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -299,9 +299,9 @@
   <!-- Contact Section -->
   <section id="contact" class="bg-black text-white py-16">
     <div class="container mx-auto px-4 lg:px-12 text-center">
-      <h2 class="text-4xl font-bold mb-6">Contact Us!</h2>
+      <h2 class="text-4xl font-bold mb-6">Transform your future with us!</h2>
       <p class="text-lg text-gray-300 mb-8">
-        Schedule a one-on-one meeting to discuss your goals and see how Wisepace can help you achieve them.
+        Schedule a meeting to discuss your goals and see how Wisepace can help you achieve them.
       </p>
       <a href="#meeting" id="open-popup-button-contact" class="px-8 py-4 bg-white text-black rounded-lg text-lg font-semibold hover:shadow-lg">
         Book a Meeting
@@ -310,15 +310,15 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-gray-400 py-6">
+  <footer class="bg-gray-800 text-gray-400 py-2">
     <div class="container mx-auto text-center">
       <a href="#">
-        <img src="/assets/img/logo_text_white.webp" alt="Logotype" class="h-40 mx-auto mb-2">
+        <img src="/assets/img/logo_text_white.webp" alt="Logotype" class="h-32 mx-auto">
       </a>
       <p class="mb-2">
-        <a href="mailto:info@wisepace.org" class="hover:text-gray-200">info@wisepace.org</a>
+        <a href="mailto:info@wisepace.org" class="text-lg hover:text-gray-200">info@wisepace.org</a>
       </p>
-      <p id="copyright"></p>
+      <p class="mb-4" id="copyright"></p>
     </div>
   </footer>
 </body>

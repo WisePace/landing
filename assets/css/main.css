@@ -3,7 +3,7 @@ body {
     scroll-behavior: smooth;
   }
   h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', sans-serif;
   }
   .gold-text {
     color: #f4b400;

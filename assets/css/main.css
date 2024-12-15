@@ -1,80 +1,43 @@
-body, h1, h2, h3, h4, h5, h6, p, a, button {
-    font-family: 'Lora', sans-serif;
-}
-
 body {
+    font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
-}
+  }
 
-.bottom-nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: none;
-    z-index: 50;
-}
+  h1, h2, h3 {
+    font-family: "Quicksand", sans-serif;
+  }
 
-@media (max-width: 768px) {
-    .bottom-nav {
-        display: flex;
+  .gold-text {
+    color: #f4b400;
+  }
+
+  .btn-primary {
+    background-color: #f4b400; /* Golden color */
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #c49000; /* Dark golden color */
+    color: white;
+    border: 1px solid #c49000;
+  }
+  
+  .navbar-bg {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
     }
-}
-
-.bottom-nav-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    color: #1F2937; /* Dark color for light mode */
-    transition: color 0.3s ease;
-}
-
-.dark .bottom-nav-item {
-    color: #FFFFFF; /* White color for dark mode */
-}
-
-.bottom-nav-item:hover, .bottom-nav-item.active {
-    color: #4B5563; /* Slightly lighter color for hover/active state in light mode */
-}
-
-.dark .bottom-nav-item:hover, .dark .bottom-nav-item.active {
-    color: #D1D5DB; /* Slightly darker color for hover/active state in dark mode */
-}
-
-.sections-dropdown {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    display: none;
-    flex-direction: column;
-    padding: 10px;
-}
-
-.sections-dropdown a {
-    color: #1F2937; /* Dark color for light mode */
-    padding: 10px;
-    text-align: center;
-    transition: color 0.3s ease;
-}
-
-.dark .sections-dropdown a {
-    color: #FFFFFF; /* White color for dark mode */
-}
-
-.sections-dropdown a:hover {
-    color: #4B5563; /* Slightly lighter color for hover state in light mode */
-}
-
-.dark .sections-dropdown a:hover {
-    color: #D1D5DB; /* Slightly darker color for hover state in dark mode */
-}
-
-/* Projects */
-.description {
-    height: 4.5rem; /* Adjust the height as needed */
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }

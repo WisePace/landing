@@ -2,12 +2,15 @@ body {
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
   }
+
   h1, h2, h3 {
-    font-family: 'Playfair Display', sans-serif;
+    font-family: "Quicksand", sans-serif;
   }
+
   .gold-text {
     color: #f4b400;
   }
+
   .btn-primary {
     background-color: #f4b400; /* Golden color */
     color: white;
@@ -18,6 +21,7 @@ body {
     color: white;
     border: 1px solid #c49000;
   }
+  
   .navbar-bg {
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(5px);

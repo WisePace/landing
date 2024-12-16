@@ -11,6 +11,10 @@ body {
     color: #f4b400;
   }
 
+  .bg-gold {
+    background-color: #f4b400;
+  }
+  
   .btn-primary {
     background-color: #f4b400; /* Golden color */
     color: white;

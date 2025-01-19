@@ -52,8 +52,6 @@
     <a href="#contact" class="block px-4 py-2 hover:bg-gray-200 text-black">Contact</a>
   </div>
 </header>
-
-
   <!-- Hero Section -->
   <section class="relative bg-center bg-cover h-screen text-white mt-10" style="background-image: url('/assets/img/itlearn.webp');">
     <div class="bg-black/50 w-full h-full absolute top-0 left-0"></div>
@@ -78,18 +76,58 @@
   </section>
   <!-- Trusted By Section -->
   <section class="bg-gray-100 py-4 text-center rounded-lg shadow-lg">
-    <h3 class="text-2xl font-semibold text-gray-600 tracking-wide mb-6 uppercase">Trusted By</h3>
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 items-center">
-        <div class="hidden sm:block"></div> <!-- Empty cell for centering -->
+    <h3 class="text-2xl font-semibold text-gray-600 tracking-wide uppercase">Trusted By</h3>
+    <div class="hidden md:grid md:grid-cols-3 md:gap-8 md:items-center md:justify-items-center">
+      <!-- Logo 1 -->
+      <div class="flex justify-center items-center">
+        <a href="https://kood.tech/" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/img/kood-black.webp" alt="Kood Jõhvi" class="h-28 grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+        </a>
+      </div>
+      <!-- Logo 2 (Centered) -->
+      <div class="flex justify-center items-center">
+        <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/img/powered-by-aws.webp" alt="Amazon Web Services" class="h-12 grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+        </a>
+      </div>
+      <!-- Logo 3 -->
+      <div class="flex justify-center items-center">
+        <a href="https://wisest.dev/" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/img/wisest.webp" alt="Wisest Dev" class="h-20 grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+        </a>
+      </div>
+    </div>
+    <div class="md:hidden relative">
+      <div class="carousel flex transition-transform duration-300 ease-in-out" style="width: 300%;">
         <!-- Logo 1 -->
-        <div class="flex justify-center items-center">
-          <img src="/assets/img/kood-black.webp" alt="Company 1" class="h-28 grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+        <div class="carousel-item flex justify-center items-center w-full" style="width: 100%;">
+          <a href="https://kood.tech/" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/kood-black.webp" alt="Kood Jõhvi" class="h-28 grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+          </a>
         </div>
         <!-- Logo 2 -->
-        <div class="flex justify-center items-center">
-          <img src="/assets/img/powered-by-aws.webp" alt="Company 2" class="h-12 grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+        <div class="carousel-item flex justify-center items-center w-full" style="width: 100%;">
+          <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/powered-by-aws.webp" alt="Amazon Web Services" class="h-12 grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+          </a>
+        </div>
+        <!-- Logo 3 -->
+        <div class="carousel-item flex justify-center items-center w-full" style="width: 100%;">
+          <a href="https://wisest.dev/" target="_blank" rel="noopener noreferrer">
+            <img src="/assets/img/wisest.webp" alt="Wisest Dev" class="h-20 grayscale hover:grayscale-0 transition duration-300 ease-in-out">
+          </a>
         </div>
       </div>
+      <!-- Navigation Buttons -->
+      <div class="flex justify-center space-x-6">
+        <button id="prevBtn" class="text-black p-2">
+          <i class="fas fa-chevron-left text-2xl"></i>
+        </button>
+        <button id="nextBtn" class="text-black p-2">
+          <i class="fas fa-chevron-right text-2xl"></i>
+        </button>
+      </div>
+    </div>
   </section>
   <!-- About Section -->
   <section id="about" class="bg-gray-50 py-12 text-black">

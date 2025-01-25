@@ -12,10 +12,12 @@
   <script src="assets/js/copyright.min.js" defer></script>
   <script src="assets/js/neetocal.min.js" defer></script>
   <script src="assets/js/mobileMenu.min.js" defer></script>
+  <script src="assets/js/benefits.min.js" defer></script>
+  <script src="assets/js/pricing.min.js" defer></script>
   <link rel="stylesheet" href="/aos/aos.css" />
   <script src="/aos/aos.js"></script>
 </head>
-<body class="bg-white text-black">
+<body class="bg-white text-black">  
   <!-- Smooth Scrolling -->
   <script>
       AOS.init({
@@ -58,10 +60,10 @@
     <div class="container mx-auto px-4 lg:px-12 h-full flex items-center relative">
       <div class="text-center lg:text-left">
         <h1 class="text-5xl font-bold mb-6">
-          <span class="gold-text">Wisepace</span>: Redefining IT Education
+          <span class="gold-text">Wisepace</span>: Where Talent Meets Opportunity
         </h1>
         <p class="text-xl leading-relaxed mb-6">
-          Empowering students with a <span class="font-semibold">work-based learning approach</span>. Fast-track your career by gaining hands-on experience, developing real-world products, and building a standout CV profile.
+          Bridging the gap between education and industry through <span class="font-semibold">work-based learning</span>. We transform passionate learners into skilled professionals while providing companies with practice-ready IT talents.
         </p>
         <div class="flex flex-col sm:flex-row sm:space-x-4">
           <a href="#about" class="px-8 py-4 btn-primary rounded-lg text-lg font-semibold mb-4 sm:mb-0">
@@ -140,12 +142,14 @@
             About <span class="gold-text">Wisepace</span>
           </h2>
           <p class="text-lg leading-relaxed text-gray-600">
-            Wisepace is an IT Educational Academy that offers a unique learning experience to passionate IT enthusiasts.
-            Our programs bridge the gap between traditional education and industry demands. 
+            Wisepace connects passionate IT learners with forward-thinking companies through our unique work-based learning approach. 
+            We combine hands-on experience with real cloud projects and expert mentorship to create job-ready developers.
           </p>
           <p class="text-lg leading-relaxed text-gray-600 mt-4">
-            At Wisepace, students gain hands-on experience by working on real-world projects, 
-            building production-grade applications, and collaborating with seasoned industry professionals.
+            For learners, this means gaining practical skills and industry experience from day one. For companies, this means access to a pool of talented developers who are ready to increase your revenue growth and drive innovation.
+          </p>
+          <p class="text-lg leading-relaxed text-gray-600 mt-4">
+            We train our students to tackle AI tools effectively while maintaining critical thinking skills. We create developers who know when to leverage AI and when to rely on their expertise.
           </p>
         </div>
         <!-- Image -->
@@ -170,13 +174,10 @@
             Our <span class="gold-text">Mission</span>
           </h2>
           <p class="text-lg leading-relaxed text-gray-600">
-            Our mission is to help students develop the necessary skills, knowledge, and confidence to succeed in their dream careers.
+            We're transforming the IT job market by making it more welcoming for newcomers while connecting companies with business-minded tech talents who drive real growth.
           </p>
           <p class="text-lg leading-relaxed text-gray-600 mt-4">
-            At Wisepace, we provide junior developers with the essential soft and analytical skills often overlooked by other IT bootcamps and educational institutes. 
-          </p>
-          <p class="text-lg leading-relaxed text-gray-600 mt-4">
-            By the end of the program, our students graduate with a professional profile, hands-on expertise, and job offers that kickstart their careers in tech.
+            Whether you're a student, junior developer, or career changer, we'll help you build confidence and skills through hands-on experience. For companies, we're your partner in finding exceptional tech talent that understands both code and business value.
           </p>
         </div>
       </div>
@@ -189,13 +190,13 @@
             Our <span class="gold-text">Vision</span>
           </h2>
           <p class="text-lg leading-relaxed text-gray-600 mb-4">
-            At Wisepace, we envision a world where education is hands-on, relevant, and aligned with industry expectations, helping students achieve their dream careers.
+            We're building Estonia's future as a global hub for IT talent and education, where geographical boundaries no longer limit your career growth.
           </p>
           <p class="text-lg leading-relaxed text-gray-600">
-            Over the next 10 to 20 years, Wisepace will evolve into Pace Group, a dynamic organization that leads in education, IT consulting, and lifestyle brands. 
+            As a fully remote academy, we're pioneering sustainable IT education that lets you learn from anywhere - whether it's a beach in Tenerife or a cozy cafe in the Baltics.
           </p>
           <p class="text-lg leading-relaxed text-gray-600 mt-4">
-            Our graduates will consistently stand out as top-tier IT professionals, driving innovation and shaping the future of technology.
+            By eliminating traditional office spaces, we're not just reducing our environmental impact - we're creating a borderless learning experience that adapts to your lifestyle while maintaining the highest standards of IT education.
           </p>
         </div>
         <!-- Image -->
@@ -208,158 +209,284 @@
     </div>
   </section>
 
-  <!-- Benefits Section -->
   <section id="benefits" class="bg-black text-white py-16">
     <div class="container mx-auto px-4 lg:px-12 text-center">
-      <h2 class="text-4xl font-bold mb-6">Why Choose <span class="gold-text">Wisepace?</span></h2>
-      <p class="text-lg text-gray-400 mb-12">
-        Our programs are designed to give you the competitive edge needed for success in the IT industry.
-      </p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-        <!-- Benefit Card -->
-        <div class="p-8 bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <div class="mb-6">
-            <i class="fas fa-code text-gold-500 text-5xl"></i>
-          </div>
-          <h3 class="text-2xl font-bold mb-4">Real-World Projects</h3>
-          <p>
-            Gain hands-on experience by working on actual client projects that mirror industry challenges.
-          </p>
+        <h2 class="text-4xl font-bold mb-6">Why Choose <span class="gold-text">Wisepace?</span></h2>
+        
+        <!-- Tab Buttons -->
+        <div class="flex justify-center space-x-4 mb-12">
+            <button id="talentsBtn" class="px-6 py-3 bg-gold text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all">
+                For Talents
+            </button>
+            <button id="companiesBtn" class="px-6 py-3 bg-gray-800 text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all">
+                For Companies
+            </button>
         </div>
-        <!-- Benefit Card -->
-        <div class="p-8 bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <div class="mb-6">
-            <i class="fas fa-briefcase text-gold-500 text-5xl"></i>
-          </div>
-          <h3 class="text-2xl font-bold mb-4">Career-Ready Skills</h3>
-          <p>
-            Learn in-demand skills and technologies that employers are actively looking for.
-          </p>
+
+        <!-- Talents Content -->
+        <div id="talentsBenefits" class="benefits-content">
+            <!-- Benefits Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                <div class="p-8 bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="mb-6">
+                        <i class="fas fa-code text-gold-500 text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Real-World Projects</h3>
+                    <p>Gain hands-on experience by working on actual production-grade applications that mirror industry challenges.</p>
+                </div>
+                <div class="p-8 bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="mb-6">
+                        <i class="fas fa-briefcase text-gold-500 text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Career-Ready Skills</h3>
+                    <p>Learn in-demand skills and technologies that employers are actively looking for.</p>
+                </div>
+                <div class="p-8 bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="mb-6">
+                        <i class="fas fa-id-card-alt text-gold-500 text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Professional Profile</h3>
+                    <p>Build a CV and LinkedIn profile that showcase your capabilities and achievements.</p>
+                </div>
+            </div>
+
+            <!-- Outcomes Section -->
+            <div class="bg-gray-900 rounded-lg p-8 mt-8">
+                <h3 class="text-3xl font-bold mb-8">Learning <span class="gold-text">Outcomes</span></h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-check-circle gold-text text-xl mt-1"></i>
+                            <p class="text-lg">Gain knowledge of agile development methodologies</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-check-circle gold-text text-xl mt-1"></i>
+                            <p class="text-lg">Master SOLID, 12Factor and other development principles</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                          <i class="fas fa-check-circle gold-text text-xl mt-1"></i>
+                          <p class="text-lg">Master modern testing methodologies</p>
+                      </div>
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-check-circle gold-text text-xl mt-1"></i>
+                            <p class="text-lg">Deep understanding of cloud technologies and deployments</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-check-circle gold-text text-xl mt-1"></i>
+                            <p class="text-lg">Master software architecture design</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-check-circle gold-text text-xl mt-1"></i>
+                            <p class="text-lg">Business-oriented development mindset</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-check-circle gold-text text-xl mt-1"></i>
+                            <p class="text-lg">Strong portfolio of real-world projects</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                          <i class="fas fa-check-circle gold-text text-xl mt-1"></i>
+                          <p class="text-lg">Competitive LinkedIn and CV Profile</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- Benefit Card -->
-        <div class="p-8 bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-          <div class="mb-6">
-            <i class="fas fa-id-card-alt text-gold-500 text-5xl"></i>
-          </div>
-          <h3 class="text-2xl font-bold mb-4">Professional Profiles</h3>
-          <p>
-            Build a CV and LinkedIn profile that showcase your capabilities and achievements.
-          </p>
+
+        <!-- Companies Content -->
+        <div id="companiesBenefits" class="benefits-content hidden">
+            <!-- Benefits Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+                <div class="p-8 bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="mb-6">
+                        <i class="fas fa-chart-line text-gold-500 text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Revenue Growth</h3>
+                    <p>Accelerate your business growth with optimized team structure and processes.</p>
+                </div>
+                <div class="p-8 bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="mb-6">
+                        <i class="fas fa-dollar-sign text-gold-500 text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Cost Reduction</h3>
+                    <p>Lower operational costs by 10-70% through optimized product solution.</p>
+                </div>
+                <div class="p-8 bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="mb-6">
+                        <i class="fas fa-user-tie text-gold-500 text-5xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Business-Minded Engineers</h3>
+                    <p>Access to engineers who understand both technical excellence and business value.</p>
+                </div>
+            </div>
+
+            <!-- Business Outcomes -->
+            <div class="bg-gray-900 rounded-lg p-8 mt-8">
+                <h3 class="text-3xl font-bold mb-8">Business <span class="gold-text">Benefits</span></h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-check-circle gold-text text-xl mt-1"></i>
+                            <p class="text-lg">Immediate deployment-ready professionals</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-check-circle gold-text text-xl mt-1"></i>
+                            <p class="text-lg">Risk-free hiring with success-based payment model</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-check-circle gold-text text-xl mt-1"></i>
+                            <p class="text-lg">Scalable team solutions without key-person dependencies</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-check-circle gold-text text-xl mt-1"></i>
+                            <p class="text-lg">Significant reduction in training costs</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-check-circle gold-text text-xl mt-1"></i>
+                            <p class="text-lg">Duration-based pricing benefits (up to 50% off)</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i class="fas fa-check-circle gold-text text-xl mt-1"></i>
+                            <p class="text-lg">Crypto payment discounts available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class="container mx-auto px-4 lg:px-12 space-y-16 mt-16">
-      <div class="text-center">
-        <h2 class="text-4xl font-bold mb-4">
-          Outcomes for <span class="gold-text">Students</span>
-        </h2>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-        <div class="space-y-4">
-          <div class="flex items-start space-x-4">
-            <div class="w-8 flex-shrink-0">
-              <i class="fas fa-project-diagram gold-text text-2xl"></i>
-            </div>
-            <p class="text-lg leading-relaxed">
-              Gain comprehensive knowledge of agile development methodologies
-            </p>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="w-8 flex-shrink-0">
-              <i class="fas fa-code gold-text text-2xl"></i>
-            </div>
-            <p class="text-lg leading-relaxed">
-              Expertise in coding best practices, including SOLID principles, Given-When-Then testing, the 12-factor app methodology and more
-              <span class="block mt-2">
-                Check our principles <a href="https://principles.wisepace.org/" class="text-blue-500 hover:underline font-semibold">here</a>.
-              </span>
-            </p>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="w-8 flex-shrink-0">
-              <i class="fas fa-file-alt gold-text text-2xl"></i>
-            </div>
-            <p class="text-lg leading-relaxed">
-              Professional CV and LinkedIn Profile that showcases skills and achievements
-            </p>
-          </div>
-        </div>
-        <div class="space-y-4">
-          <div class="flex items-start space-x-4">
-            <div class="w-8 flex-shrink-0">
-              <i class="fas fa-users gold-text text-2xl"></i>
-            </div>
-            <p class="text-lg leading-relaxed">
-              Deep knowledge of team development, task management, automation and collaboration tools (e.g Atlassian, Slack, Github)
-            </p>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="w-8 flex-shrink-0">
-              <i class="fas fa-briefcase gold-text text-2xl"></i>
-            </div>
-            <p class="text-lg leading-relaxed">
-              Understand how to develop according to business needs, not just coding for the sake of it
-            </p>
-          </div>
-          <div class="flex items-start space-x-4">
-            <div class="w-8 flex-shrink-0">
-              <i class="fas fa-graduation-cap gold-text text-2xl"></i>
-            </div>
-            <p class="text-lg leading-relaxed">
-              Comprehensive knowledge of the IT industry and its trends
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
-  <!-- Pricing Section -->
   <section id="pricing" class="bg-white py-16">
     <div class="container mx-auto px-6 lg:px-12 text-center">
-      <h2 class="text-5xl font-bold mb-8 text-black">
-        Prices at <span class="gold-text">Wisepace</span>
-      </h2>
-      <p class="text-lg text-gray-500 mb-12 max-w-2xl mx-auto">
-        Take the first step towards your future.
-      </p>
+        <h2 class="text-5xl font-bold mb-8 text-black">
+            Prices at <span class="gold-text">Wisepace</span>
+        </h2>
 
-      <!-- Pricing Card -->
-      <div class="relative mx-auto max-w-2xl bg-gray-50 rounded-2xl shadow-2xl overflow-hidden">
-        <!-- Card Header -->
-        <div class="bg-gold py-8 text-white">
-          <h3 class="text-4xl font-bold">Exclusive Membership</h3>
-          <p class="text-gray-200 mt-2 text-lg">Empowering your IT journey</p>
+        <!-- Tab Buttons -->
+        <div class="flex justify-center space-x-4 mb-12">
+            <button id="studentPriceBtn" class="px-6 py-3 bg-gold text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all">
+                For Students
+            </button>
+            <button id="companyPriceBtn" class="px-6 py-3 bg-gray-800 text-white rounded-lg font-semibold hover:bg-opacity-90 transition-all">
+                For Companies
+            </button>
         </div>
 
-        <!-- Card Body -->
-        <div class="px-8 py-10">
-          <!-- Pricing Table -->
-          <div class="grid grid-cols-1 gap-8 text-left sm:grid-cols-2">
-            <!-- First 5 Students -->
-            <div>
-              <p class="text-gray-600 text-lg font-medium">🔥 Last Place Left 🔥</p>
-              <p class="text-5xl font-bold text-black">50€</p>
-              <p class="text-gray-400 text-sm">Per Month</p>
+        <!-- Student Pricing -->
+        <div id="studentPricing" class="pricing-content">
+            <div class="relative mx-auto max-w-2xl bg-gray-50 rounded-2xl shadow-2xl overflow-hidden">
+                <div class="bg-gold py-8 text-white">
+                    <h3 class="text-4xl font-bold">Student Membership</h3>
+                    <p class="text-gray-200 mt-2 text-lg">Start Your IT Career Journey</p>
+                </div>
+                <div class="px-8 py-10">
+                    <div class="grid grid-cols-1 gap-8 text-left sm:grid-cols-2">
+                        <div>
+                            <p class="text-5xl font-bold text-black mt-4">70€</p>
+                            <p class="text-gray-400 text-sm">Per Month</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-check text-gold"></i>
+                                <span>Commercial Experience</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-check text-gold"></i>
+                                <span>Agile Team Development</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-check text-gold"></i>
+                                <span>Job-ready portfolio</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                              <i class="fas fa-check text-gold"></i>
+                              <span>Business development mindset</span>
+                          </div>
+                        </div>
+                    </div>
+                    <hr class="my-8 border-gray-300">
+                    <p class="text-lg text-gray-600">
+                        <span class="font-semibold text-gold">Crypto Payments:</span> 
+                        Get <span class="font-bold text-black">10% off</span>
+                    </p>
+                </div>
             </div>
-            <!-- Standard Plan -->
-            <div>
-              <p class="text-gray-600 text-lg font-medium">Standard Plan</p>
-              <p class="text-5xl font-bold text-black">100€</p>
-              <p class="text-gray-400 text-sm">Per Month</p>
-            </div>
-          </div>
-
-          <!-- Divider -->
-          <hr class="my-8 border-gray-300">
-
-          <!-- Crypto Discount -->
-          <p class="text-lg text-gray-600">
-            <span class="font-semibold text-gold">Crypto Payments:</span> Get <span class="font-bold text-black">20% off</span> on any plan.
-          </p>
         </div>
-      </div>
+
+        <!-- Company Pricing -->
+        <div id="companyPricing" class="pricing-content hidden">
+            <div class="relative mx-auto max-w-2xl bg-gray-50 rounded-2xl shadow-2xl overflow-hidden">
+                <div class="bg-gold py-8 text-white">
+                    <h3 class="text-4xl font-bold">Business Partnership</h3>
+                    <p class="text-gray-200 mt-2 text-lg">Invest in Future-Ready Talent</p>
+                </div>
+                <div class="px-8 py-10">
+                    <div class="grid grid-cols-1 gap-8 text-left sm:grid-cols-2">
+                        <div>
+                            <p class="text-blue-600 text-lg font-bold bg-blue-50 p-2 rounded-lg inline-block">
+                                📈 ROI Focused
+                            </p>
+                            <p class="text-5xl font-bold text-black mt-4">From 700€</p>
+                            <p class="text-gray-400 text-sm">Per Talent</p>
+                        </div>
+                        <div class="space-y-4">
+                          <div class="flex items-center space-x-2">
+                              <i class="fas fa-chart-line text-gold"></i>
+                              <span>Revenue growth and costs reduction</span>
+                          </div>
+                          <div class="flex items-center space-x-2">
+                              <i class="fas fa-shield-alt text-gold"></i>
+                              <span>50/50 split payment: hire now, pay rest after probation</span>                          </div>
+                          <div class="flex items-center space-x-2">
+                              <i class="fas fa-clock text-gold"></i>
+                              <span>Immediate project-ready engineers</span>
+                          </div>
+                          <div class="flex items-center space-x-2">
+                              <i class="fas fa-users text-gold"></i>
+                              <span>100% Guarantee till the end of probation period</span>
+                          </div>
+                      </div>
+                    </div>
+                    <hr class="my-8 border-gray-300">
+                    <div class="space-y-4 text-left">
+                      <div class="bg-gray-100 p-4 rounded-lg">
+                          <p class="font-semibold text-black mb-2">Student Experience Discounts:</p>
+                          <div class="space-y-2">
+                              <div class="flex items-center">
+                                  <i class="fas fa-user-graduate text-gold mr-2"></i>
+                                  <p class="text-gray-600">Student with 3-6 months experience: <span class="font-bold text-green-600">50% off</span></p>
+                              </div>
+                              <div class="flex items-center">
+                                  <i class="fas fa-user-graduate text-gold mr-2"></i>
+                                  <p class="text-gray-600">Student with 6-9 months experience: <span class="font-bold text-green-600">35% off</span></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="bg-blue-50 p-4 rounded-lg">
+                          <div class="flex items-center">
+                              <i class="fas fa-coins text-gold mr-2"></i>
+                              <p class="text-gray-600">
+                                  <span class="font-semibold text-black">Crypto Payment Benefit:</span> 
+                                  Additional <span class="font-bold text-blue-600">15% off</span> total price
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="mt-16 text-center">
+      <h3 class="text-3xl font-bold mb-8">
+          Ready to join us? <span class="gold-text">Book a meeting below!</span>
+      </h3>
+      <a href="#contact" class="inline-block animate-bounce">
+          <i class="fas fa-chevron-down text-4xl text-gold hover:text-gold-600 transition-colors duration-300"></i>
+      </a>
+  </div>
   </section>
 
   <!-- Reviews Section -->
